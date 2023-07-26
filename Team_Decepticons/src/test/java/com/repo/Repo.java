@@ -57,16 +57,36 @@ public class Repo {
 
 	@FindBy (xpath="//*[contains(text(),' Member payments ')]")
 	public static WebElement typeFilterSelection;
-	@FindBy (xpath="//input[@id='id_27']")//SENDKEYS(12)
-	public static WebElement fromAmt;
+	
 	
 	@FindBy (xpath="(//input[@class='form-control text-right ng-pristine ng-valid ng-touched'])[1]")//SENDKEYS(12)
 	public static WebElement toAmt;
 	
 	@FindBy (xpath="//div[@class='w-100 mw-100 text-truncate pr-3']")
 	public static WebElement period;
+	@FindBy(css = "input.form-control.text-right")
+	public static WebElement amountfield;
+	
+	@FindBy(css = "textarea[rows='3']")
+	public static WebElement amountdescrfield;
+	
+	@FindBy(xpath = "//span[text()='Confirm']")
+	public static WebElement confrimpaybtn;
 
+	@FindBy(xpath ="//div[@class='notification-message']")
+	public static WebElement shownotify;
+	
+	@FindBy(xpath = "(//div[@class='nav-item-text'])[2]")
+	public static WebElement paymentUserbtn;
 
+	@FindBy(css = "button.btn.btn-icon.ml-2")
+	public static WebElement contactlistbtn;
+
+	@FindBy(xpath = "//a[contains(text(),'Demo three')]")
+	public static WebElement selectuser;
+	
+	@FindBy(xpath = "//a[contains(text(),' Active Walking ')]")
+	public static WebElement selectuser1;
 
 	
 

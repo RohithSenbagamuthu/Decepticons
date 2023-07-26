@@ -41,7 +41,7 @@ public class AccountInformation2 {
        wait.until(ExpectedConditions.visibilityOf(Repo.BankingMenu));
 	   Repo.BankingMenu.click();
 	}
-	
+	//Search payments TestCase=5
 	@When("User should click the Show  Filter button")
 	public void user_should_click_the_show_filter_button() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver,30);
@@ -56,9 +56,13 @@ public class AccountInformation2 {
 	@When("Select pick from your contact list on the user filter and select a contact")
 	public void select_pick_from_your_contact_list_on_the_user_filter_and_select_a_contact() throws InterruptedException {
 		 WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOf(Repo.inputUser)).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("(//a[contains(text(),' Active Walking')])[3]")).click();
+	        wait.until(ExpectedConditions.visibilityOf(Repo.contactlistbtn));
+	        Repo.contactlistbtn.click();
+	        wait.until(ExpectedConditions.visibilityOf(Repo.selectuser1));
+	        Repo.selectuser1.click();
+	        wait.until(ExpectedConditions.visibilityOf(Repo.selectuser1));
+	        Repo.selectuser1.click();
+		
 	}
 
 	@When("Click the peroid menu and select any one option")
@@ -74,7 +78,7 @@ public class AccountInformation2 {
 		   File file3=new File("C:\\Users\\msundarraj\\eclipse-workspace\\Team_Decepticons\\Team_Decepticons\\ScreenShot\\Filters.png");
 		   FileUtils.copyFile(image3,file3);
 	}
-
+	//View payment details TestCase=6
 	@Given("Click any one from Member Account")
 	public void click_any_one_from_member_account() {
 		 WebDriverWait wait = new WebDriverWait(driver,30);
@@ -91,7 +95,7 @@ public class AccountInformation2 {
 		   File file=new File("C:\\Users\\msundarraj\\eclipse-workspace\\Team_Decepticons\\Team_Decepticons\\ScreenShot\\PaymentDetails.png");
 		   FileUtils.copyFile(image,file);
 	}
-
+	// Print payment details TestCase=7
 	@Given("User should click the Member Account")
 	public void user_should_click_the_member_account() {
 		 WebDriverWait wait = new WebDriverWait(driver,30);
