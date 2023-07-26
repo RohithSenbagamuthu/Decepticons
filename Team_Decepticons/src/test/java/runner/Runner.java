@@ -10,12 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 	features = {  
 
-		"C:\\Users\\hagunaseelan\\eclipse-workspace\\javatest\\PilotProject1\\src\\test\\resources\\FeatureFiles\\Updateprofile.feature",
-		"C:\\Users\\hagunaseelan\\eclipse-workspace\\javatest\\PilotProject1\\src\\test\\resources\\FeatureFiles\\Multipleaddress.feature",
-		"C:\\Users\\hagunaseelan\\eclipse-workspace\\javatest\\PilotProject1\\src\\test\\resources\\FeatureFiles\\Multiplephone.feature",
-		"C:\\Users\\hagunaseelan\\eclipse-workspace\\javatest\\PilotProject1\\src\\test\\resources\\FeatureFiles\\Managepasswords.feature",
-		"C:\\Users\\hagunaseelan\\eclipse-workspace\\javatest\\PilotProject1\\src\\test\\resources\\FeatureFiles\\Notificationpreference.feature",
-		"C:\\Users\\hagunaseelan\\eclipse-workspace\\javatest\\PilotProject1\\src\\test\\resources\\FeatureFiles\\Managecontacts.feature",
+//		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Updateprofile.feature",
+		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Multipleaddress.feature",
+		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Multiplephone.feature",
+		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Managepasswords.feature",
+		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Notificationpreference.feature",
+		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Managecontacts.feature",
+		"C:\\Users\\DELL\\Downloads\\Team_Decepticons\\Team_Decepticons\\Feature Files\\Userfunction\\Updateprofile.feature",
 },
 glue = {"com.stepdefinition" },
 
